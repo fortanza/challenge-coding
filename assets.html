@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Web Development Tech Challenge</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -15,48 +15,81 @@
     <!--Content goes here-->
 
     <!-- Navigation Section-->
-    <header id="header">
+    <header id="header" class="background-blue">
       <div id="navbar">
         <div id="logo">
           <img src="assets/logo.png" alt="logo" />
         </div>
         <div id="nav">
           <ul>
-            <li class="nav_list"><a href="index.html" class="nav_list-link">About</a></li>
-            <li class="nav_list"><a href="royal-family.html" class="nav_list-link">Royal Family</a></li>
-            <li class="nav_list"><a href="assets.html" class="nav_list-link">Royal Assets </a></li>
-            <li class="nav_list"><a href="contact.html" class="nav_list-link">Contact Us</a></li>
+            <li class="nav_list">
+              <a href="index.html" class="nav_list-link">About</a>
+            </li>
+            <li class="nav_list">
+              <a href="royal-family.html" class="nav_list-link">Royal Family</a>
+            </li>
+            <li class="nav_list">
+              <a href="assets.html" class="nav_list-link">Royal Assets </a>
+            </li>
+            <li class="nav_list">
+              <a href="contact.html" class="nav_list-link">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
-      <div id="title">
-        <h1>Welcome to the Royal Kingdom of Colchis</h1>
-      </div>
     </header>
-
-    <section id="hero" class="container">
-      <!-- Hero Section -->
-      <h2 id="hero__title">About the kingdom</h2>
-      <p id="hero__description">Welcome to you !!! The Kingdom of Colchis plays an important role in the training of the developers of the world people. 
-        You will be the main actor of your learning, we accompany you throughout your journey, we push you to be autonomous and above all "Learn to learn" to continue your learning.</p>
+    <section id="assets"  class="container">
+      <h2>The Kingdom's Royal Assets</h2>
+      <div id="table">
+        <table>
+          <tr>
+            <td>Asset Name</td>
+            <td>Number</td>
+            <td>Worth</td>
+          </tr>
+          <tr>
+            <td>Stables</td>
+            <td>42</td>
+            <td>6 000 000 lari</td>
+          </tr>
+          <tr>
+            <td>Catles</td>
+            <td>4</td>
+            <td>24 000 000 lari</td>
+          </tr>
+          <tr>
+            <td>Gards</td>
+            <td>10000</td>
+            <td>10 000 000 lari</td>
+          </tr>
+          <tr>
+            <td>Wagons</td>
+            <td>18</td>
+            <td>4 000 lari</td>
+          </tr>
+          <tr>
+            <td>Wagons</td>
+            <td>18</td>
+            <td>4 000 lari</td>
+          </tr>
+          <tr>
+            <td>Livestock</td>
+            <td>51942</td>
+            <td>4 000 000 lari</td>
+          </tr>
+          <tr>
+            <td>Armor</td>
+            <td>997000</td>
+            <td>11 000 000 lari</td>
+          </tr>
+          <tr>
+            <td>Canons</td>
+            <td>99</td>
+            <td>110 000 000 lari</td>
+          </tr>
+        </table>
+      </div>
     </section>
-
-    <!-- Add this to a seperate page, e.g. royal-family.html
-			Images and text aligned next to each other -->
-    <h2>The Royal Family</h2>
-
-    <!-- Add this to a seperate page, e.g. assets.html
-			Kingdom's Royal Assets or Sporting Results table -->
-    <h2>The Kingdom's Royal Assets / Javelin Event Results</h2>
-    Asset... | Number... | Worth... Item 1...| 4... ] 6,000 Points... |
-    Player... | Family Name... 94... | Sir John. | John of Elderworth
-
-    <!-- Add this to a seperate page, e.g. contact.html
-    <!-- Contact the Royal Kingdom -->
-    <p>Fill in the form below to contact the Royal Kingdom</p>
-    Name... Email... Message... Submit...
-
-    <!-- Connect the Javascript file -->
     <script src="script.js"></script>
   </body>
 </html>
