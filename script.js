@@ -20,3 +20,12 @@ function closeSinglePict(){
     let imageContainer = document.getElementById('galleryContainer');
     imageContainer.classList.toggle('visible');
 }
+
+// ------------------------  Alert button ----------------------------------------------
+
+const btn = document.querySelector('.btn')
+
+btn.addEventListener('click', function(e){
+    e.preventDefault()
+    alert("The royal family thanks you and will respond as soon as possible")
+})

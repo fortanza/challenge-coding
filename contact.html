@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Web Development Tech Challenge</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -15,46 +15,67 @@
     <!--Content goes here-->
 
     <!-- Navigation Section-->
-    <header id="header">
+    <header id="header" class="background-purple">
       <div id="navbar">
         <div id="logo">
           <img src="assets/logo.png" alt="logo" />
         </div>
         <div id="nav">
           <ul>
-            <li class="nav_list"><a href="index.html" class="nav_list-link">About</a></li>
-            <li class="nav_list"><a href="royal-family.html" class="nav_list-link">Royal Family</a></li>
-            <li class="nav_list"><a href="assets.html" class="nav_list-link">Royal Assets </a></li>
-            <li class="nav_list"><a href="contact.html" class="nav_list-link">Contact Us</a></li>
+            <li class="nav_list">
+              <a href="index.html" class="nav_list-link">About</a>
+            </li>
+            <li class="nav_list">
+              <a href="royal-family.html" class="nav_list-link">Royal Family</a>
+            </li>
+            <li class="nav_list">
+              <a href="assets.html" class="nav_list-link">Royal Assets </a>
+            </li>
+            <li class="nav_list">
+              <a href="contact.html" class="nav_list-link">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
-      <div id="title">
-        <h1>Welcome to the Royal Kingdom of Colchis</h1>
-      </div>
     </header>
-
-    <section id="hero" class="container">
-      <!-- Hero Section -->
-      <h2 id="hero__title">About the kingdom</h2>
-      <p id="hero__description">Welcome to you !!! The Kingdom of Colchis plays an important role in the training of the developers of the world people. 
-        You will be the main actor of your learning, we accompany you throughout your journey, we push you to be autonomous and above all "Learn to learn" to continue your learning.</p>
+    <section id="contact" class="container">
+        <form>
+          <p>Fill in the form below to contact the Royal Kingdom</p>
+          <fieldset>
+            <div class="array">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name / First name"
+              />
+            </div>
+            <div class="array">
+              <label for="mail">Email </label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="nom@example.com"
+              />
+            </div>
+            <div class="array">
+              <label for="message">Message </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="50"
+                rows="20"
+                placeholder="Purpose of your request"
+              ></textarea>
+            </div>
+            <div id="form_btn">
+              <button class="btn btn--animated btn--purple">Submit</button>
+            </div>
+          </fieldset>
+        </form>
     </section>
-
-    <!-- Add this to a seperate page, e.g. royal-family.html
-			Images and text aligned next to each other -->
-    <h2>The Royal Family</h2>
-
-    <!-- Add this to a seperate page, e.g. assets.html
-			Kingdom's Royal Assets or Sporting Results table -->
-    <h2>The Kingdom's Royal Assets / Javelin Event Results</h2>
-    Asset... | Number... | Worth... Item 1...| 4... ] 6,000 Points... |
-    Player... | Family Name... 94... | Sir John. | John of Elderworth
-
-    <!-- Add this to a seperate page, e.g. contact.html
-    <!-- Contact the Royal Kingdom -->
-    <p>Fill in the form below to contact the Royal Kingdom</p>
-    Name... Email... Message... Submit...
 
     <!-- Connect the Javascript file -->
     <script src="script.js"></script>
